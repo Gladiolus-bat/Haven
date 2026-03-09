@@ -6,6 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Marketplace</title>
     <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        main {
+            background-color: #ffffff;
+            padding: 0 4.125rem;
+            /* 66px */
+        }
+
+        .hero-section {
+            padding-top: 1rem;
+            /* 40px */
+        }
+
+        .hero-card {
+            /* Image Background Logic */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: rgb(16, 13, 13);
+            /*background-image: linear-gradient(rgba(72, 143, 182, 0.4), rgba(0, 0, 0, 0.4)), url('/images/');*/
+            border-radius: 0.9375rem;
+            /* 15px */
+            padding: 5rem;
+            /* 80px 60px */
+            padding-top: 1rem;
+            padding-left: 8rem;
+            min-height: 20rem;
+            /* 400px */
+            display: flex;
+            flex-direction: column;
+            /*Keep them in a single column */
+            justify-content: center;
+            /* Center them in middle region of screen */
+        }
+
+        .hero-heading {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Add market sans font */
+            font-size: 3rem;
+            /* 72px */
+            font-weight: bold;
+            margin-bottom: 0.9375rem;
+            /* 15px */
+            color: #ffffff;
+        }
+
+        .hero-subtext {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 28.125rem;
+            /* 450px */
+            line-height: 1.4;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1.5625rem;
+            /* 25px */
+            margin-top: -0.5rem;
+            font-size: 1.1rem;
+            /* 14px */
+        }
+
+        .hero-shop-btn {
+            background-color: #ffffff;
+            /* Changed to white button for better aesthetic on images */
+            color: #333;
+            border: none;
+            padding: 0.75rem 1.5625rem;
+            /* 12px 25px */
+            border-radius: 1.5625rem;
+            /* 25px */
+            width: fit-content;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .hero-shop-btn:hover {
+            background-color: #d0d0d0;
+            /*Add color scheme of website*/
+            transform: translateY(-0.125rem);
+            /* 2px lift */
+        }
+    </style>
 </head>
 
 <body>
@@ -26,14 +108,18 @@
         </nav>
     </header>
 
-    <div class="hero-section">
-
-    </div>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2026 Geschaft. All Rights Reserved.</p>
-    </footer>
+    <!-- Hero Section -->
+    <main class="hero-section">
+        <div class="hero-card">
+            <h1 class="hero-heading">Welcome to Markt</h1>
+            <p class="hero-subtext">
+                Discover amazing products at unbeatable prices.
+            </p>
+            <button class="hero-shop-btn">
+                <a href="/pages/" style="text-decoration:none;color:black;">Shop Now</a> <!--Make sure to link to products page-->
+            </button>
+        </div>
+    </main>
 
 </body>
 
