@@ -194,6 +194,57 @@
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-weight:600;
         }
+
+        /* Shop Now CTA Section */
+        .shop-now-cta{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: black;
+            border-radius:1rem;
+            margin: 0 4rem 4rem; /* 0 64px 64px */
+            padding: 2rem; /* 32px */ 
+        }
+
+        .shop-now-cta h3{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1.5rem; /* 24px */
+            font-weight: bold;
+            color: white;
+            margin-bottom: 0.03rem; /* 0.5px */
+        }
+
+        .shop-now-cta p{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 1rem; /* 16px */
+            margin-top:0.5rem; /* 8px */
+            color: #d0d0d0;
+        }
+
+        .shop-now-cta-but{
+            background-color: #ffffff;
+            color: #333;
+            border: none;
+            padding: 0.75rem 1.5625rem;
+            /* 12px 25px */
+            border-radius: 1.5625rem;
+            /* 25px */
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        .shop-now-cta-but a{
+            text-decoration: none;
+            color: black;
+        }
+
+        .shop-now-cta-but:hover {
+            background-color: #d0d0d0;
+            transform: translateY(-0.125rem);
+            transition: 0.3s ease;
+        }
+        
     </style>
 </head>
 
@@ -229,6 +280,7 @@
         </div>
     </main>
 
+    <!--Category Section-->
     <section class="categories">
         <div class="categories-text">
             <h2>Best Deals</h2>
@@ -242,8 +294,18 @@
         </div>
     </section>
 
+    <!--Shop Now CTA-->
+    <section class="shop-now-cta">
+        <div>
+            <h3>Don't Miss Out!</h3>
+            <p>Shop now and experience the best deals on our marketplace.</p>
+        </div>
+        <button class="shop-now-cta-but">
+            <a href="/pages/products.html">Shop Now</a>
+        </button>
+    </section>
 
-    <!-- Marquee section -->
+    <!-- Marquee Functionality -->
     <script>
         const categories = ['Electronics', 'Furniture', 'Generators', 'Watches', 'Laptops', 'Health & Beauty', 'Headphones', 'TVs'];
         const track = document.getElementById('track'); // Track is the element ID from track class
