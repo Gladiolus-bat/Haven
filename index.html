@@ -24,7 +24,7 @@
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-color: rgb(16, 13, 13);
+            background-color: #d52941;
             /*background-image: linear-gradient(rgba(72, 143, 182, 0.4), rgba(0, 0, 0, 0.4)), url('/images/');*/
             border-radius: 0.9375rem;
             /* 15px */
@@ -174,8 +174,13 @@
             transition: transform 0.3s, box-shadow 0.3s; /* Not really necessary, but useful scaling */
         }
 
+        .card .card-img{
+            transition: transform 0.3s, box-shadow 0.3s;
+            transform-origin:bottom;
+        }
+
         .card:hover .card-img {
-            transform: translateY(-0.25rem); /* 4px lift on hover, same as Shop Now button*/
+            transform:scaleX(1.5); /* Three options, either scaleX, scaleY or scale, Needs to be tested with images during polishing */
         }
 
         .card p{
