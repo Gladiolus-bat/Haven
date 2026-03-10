@@ -37,17 +37,19 @@
             display: flex;
             width: 90%;
             margin: auto;
-            gap: 150px;
+            gap: 40px;
+            background-image: url(../images/Logo/Background.svg);
+            background-repeat: no-repeat;
+            background-position: left 200px;
+            background-size: 400px;
         }
 
         /* SIDEBAR */
 
         .sidebar {
-            width: 250px;
+            width: 200px;
             height: 300px;
-            border-top: #aaaaaa69 solid 1px;
-            border-left: #aaaaaa69 solid 1px;
-            padding: 40px;
+            padding: 10px 40px 10px 0px;
         }
 
         .sidebar ul {
@@ -62,6 +64,13 @@
             color: #000000;
             text-decoration: none;
         }
+        
+        /*Products and Load more container*/
+        .products-load-container {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+        }
 
         /* PRODUCTS */
         .products-container {
@@ -69,6 +78,9 @@
             flex-wrap: wrap;
             gap: 54px;
             flex: 1;
+            border-top: #aaaaaa69 solid 1px;
+            padding-top: 40px;
+            padding-left: 40px;
         }
 
         .product-card {
@@ -77,12 +89,12 @@
             background: rgb(255, 255, 255);
             padding: 10px;
             border-radius: 10px;
-            width: 250px;
+            width: 300px;
         }
 
         .product-image {
             height: 280px;
-            width: 250px;
+            width: 300px;
             background: #d9d9d9;
             border-radius: 10px;
             position: relative;
@@ -91,7 +103,7 @@
             justify-content: center;
         }
 
-         .product-image:hover {
+        .product-image:hover {
             transform: scale(1.08);
             transition: transform 0.3s ease;
         }
@@ -138,6 +150,26 @@
             text-decoration: line-through;
             color: #aaa;
         }
+
+        .load-more {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .load-more-btn {
+            background-color: transparent;
+            color: #494949;
+            border: 1px solid #B0B0B0;
+            padding: 10px 36px;
+            border-radius: 24px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .load-more-btn:hover {
+            background-color: #000000;
+            color: #ffffff;
+        }
     </style>
 
 </head>
@@ -170,200 +202,206 @@
                     <li><a href="#">Others</a></li>
                 </ul>
             </aside>
+            <div class="products-load-container">
+                <!--Products-->
+                <section class="products-container">
 
-            <!--Products-->
-            <section class="products-container">
+                    <div class="product-card">
 
-                <div class="product-card">
+                        <div class="product-image">
+                            <img src="../images/Electronics/Dell Optiplex.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-image">
-                        <img src="../images/Electronics/Dell Optiplex.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-info">
+                            <br>
+                            <h3>Product 1</h3>
+                            <p>Description of Product 1</p>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Product 1</h3>
-                        <p>Description of Product 1</p>
-
-                        <div class="price">
-                            <span class="new">$20.99</span>
-                            <span class="old">$25.99</span>
+                            <div class="price">
+                                <span class="new">$20.99</span>
+                                <span class="old">$25.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Clothes/Cardigan.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Clothes/Cardigan.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Cardigan</h3>
-                        <p>Cardigan made from wool.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Cardigan</h3>
+                            <p>Cardigan made from wool.</p>
 
-                        <div class="price">
-                            <span class="new">$9.99</span>
-                            <span class="old">$14.99</span>
+                            <div class="price">
+                                <span class="new">$9.99</span>
+                                <span class="old">$14.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Watches/Tissot.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Watches/Tissot.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Tissot Watch</h3>
-                        <p>Swiss-made watch with a stainless steel case and bracelet.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Tissot Watch</h3>
+                            <p>Swiss-made watch with a stainless steel case and bracelet.</p>
 
-                        <div class="price">
-                            <span class="new">$39.99</span>
-                            <span class="old">$49.99</span>
+                            <div class="price">
+                                <span class="new">$39.99</span>
+                                <span class="old">$49.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Other/Yarn.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Other/Yarn.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Yarn</h3>
-                        <p>High-quality yarn for knitting and crocheting.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Yarn</h3>
+                            <p>High-quality yarn for knitting and crocheting.</p>
 
-                        <div class="price">
-                            <span class="new">$10.99</span>
-                            <span class="old">$20.99</span>
+                            <div class="price">
+                                <span class="new">$10.99</span>
+                                <span class="old">$20.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Shoes/Ouma.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Shoes/Ouma.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Puma Shoes</h3>
-                        <p>Comfortable and stylish shoes for everyday wear.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Puma Shoes</h3>
+                            <p>Comfortable and stylish shoes for everyday wear.</p>
 
-                        <div class="price">
-                            <span class="new">$119.99</span>
-                            <span class="old">$229.99</span>
+                            <div class="price">
+                                <span class="new">$119.99</span>
+                                <span class="old">$229.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Shoes/Converse.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Shoes/Converse.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Converse Shoes</h3>
-                        <p>Classic and comfortable shoes for everyday wear.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Converse Shoes</h3>
+                            <p>Classic and comfortable shoes for everyday wear.</p>
 
-                        <div class="price">
-                            <span class="new">$90.99</span>
-                            <span class="old">$110.99</span>
+                            <div class="price">
+                                <span class="new">$90.99</span>
+                                <span class="old">$110.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Clothes/hoodie.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Clothes/hoodie.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Hoodie</h3>
-                        <p>Comfortable and stylish hoodie for everyday wear.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Hoodie</h3>
+                            <p>Comfortable and stylish hoodie for everyday wear.</p>
 
-                        <div class="price">
-                            <span class="new">$19.99</span>
-                            <span class="old">$29.99</span>
+                            <div class="price">
+                                <span class="new">$19.99</span>
+                                <span class="old">$29.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Electronics/Laptop.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Electronics/Laptop.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Dell Laptop</h3>
-                        <p>High-performance laptop for work and play.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Dell Laptop</h3>
+                            <p>High-performance laptop for work and play.</p>
 
-                        <div class="price">
-                            <span class="new">$339.99</span>
-                            <span class="old">$449.99</span>
+                            <div class="price">
+                                <span class="new">$339.99</span>
+                                <span class="old">$449.99</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="product-card">
+                    <div class="product-card">
 
-                    <div class="product-image">
-                        <img src="../images/Other/Lipstick.webp" alt="Product 1">
-                        <span>
-                            <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
-                        </span>
-                    </div>
+                        <div class="product-image">
+                            <img src="../images/Other/Lipstick.webp" alt="Product 1">
+                            <span>
+                                <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
+                            </span>
+                        </div>
 
-                    <div class="product-info">
-                        <br>
-                        <h3>Merle Norman Lipstick</h3>
-                        <p>Highly pigmented lipstick with long-lasting color.</p>
+                        <div class="product-info">
+                            <br>
+                            <h3>Merle Norman Lipstick</h3>
+                            <p>Highly pigmented lipstick with long-lasting color.</p>
 
-                        <div class="price">
-                            <span class="new">$29.99</span>
-                            <span class="old">$39.99</span>
+                            <div class="price">
+                                <span class="new">$29.99</span>
+                                <span class="old">$39.99</span>
+                            </div>
                         </div>
                     </div>
+
+                </section>
+
+                <div class="load-more">
+                    <button class="load-more-btn">Load more...</button>
                 </div>
 
-            </section>
+            </div>
 
         </div>
 
