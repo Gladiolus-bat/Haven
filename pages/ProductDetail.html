@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charizaed 004/102 Base Set (Shadowless) Holo | Haven</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: 13px;
+            color: #191919;
+            background: #fff;
+        }
+
+        .product-description-section {
+            max-width: 1280px;
+            margin: 14px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 55% 45%;
+            gap: 28px;
+            align-items: start;
+        }
+
+        .product-image { 
+            width: 100%;
+            aspect-ratio: 1;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            overflow: hidden;
+            background: #fafafa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+            
+        .product-image img {
+            width: auto;
+            height: auto;
+            max-width: 100%;
+            max-height: 100%;
+            transition: transform .3s ease;
+        }
+        
+        .product-image:hover img { 
+            transform: 
+            scale(1.06); 
+        }
+
+        .product-details { 
+            min-width: 0; 
+        }
+
+        .product-title {
+            font-size: 20px;
+            font-weight: 600;
+            line-height: 1.4;
+            color: #191919;
+            margin-bottom: 14px;
+        }
+
+        .product-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border: 1px solid #e0e0e0;
+            border-radius: 6px;
+            margin-bottom: 18px;
+        }
+        
+        .seller-logo {
+            width: 36px;
+            height: 36px;
+            background: #191919;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 12px;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+        
+        .seller-details { 
+            flex: 1; 
+        }
+        
+        .seller-name-link { 
+            font-size: 13px;
+             color: #0064d2; 
+        }
+        
+        .seller-count { 
+            font-weight: 400;
+             color: #767676;
+            font-size: 12px; 
+        }
+        
+        .seller-meta { 
+            font-size: 12px;
+            color: #767676;
+            margin-top: 2px;
+             display: flex; 
+             gap: 4px; 
+             flex-wrap: wrap; 
+        }
+        
+        .seller-meta .positive { 
+            color: #191919;
+             font-weight: 500; 
+        }
+        
+        .seller-meta .sep { 
+            color: #767676; 
+        }
+        
+        .seller-arrow {
+             font-size: 20px;
+              color: #aaa;
+               flex-shrink: 0;
+        }
+
+        .product-price {
+            margin-bottom: 16px; 
+        }
+        .product-price-main {
+            font-size: 28px;
+            font-weight: 700;
+            color: #191919; 
+            margin-bottom: 4px; 
+        }
+        
+        .product-price-list { 
+            font-size: 13px; 
+            color: #767676; 
+        }
+        
+        .price-strike { 
+            text-decoration: 
+            line-through; 
+        }
+        
+        .price-info-icon { 
+            font-size: 12px; 
+            color: #aaa; 
+            cursor: pointer; 
+        }
+
+        .product-qty {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 14px;
+            font-size: 13px;
+        }
+        
+        .product-qty-label { 
+            color: #767676; 
+        }
+        
+        .product-qty-input {
+            width: 50px;
+            height: 32px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 14px;
+            padding: 0 6px;
+        }
+        
+        .product-sold-count { 
+            font-size: 13px; 
+            color: #767676; 
+        }
+
+        .product-feature {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.6;
+            margin-bottom: 18px;
+        }
+
+        .btn-buy-now {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            border-radius: 25px;
+            background: #3665f3;
+            color: #fff;
+            font-size: 16px;
+            font-weight: 700;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+            transition: filter .15s;
+        }
+
+        .btn-buy-now:hover { 
+            filter: brightness(.92); 
+        }
+        
+        .btn-add-cart {
+            display: block;
+            width: 100%;
+            padding: 13px;
+            border-radius: 25px;
+            background: #fff;
+            color: #191919;
+            font-size: 16px;
+            font-weight: 700;
+            border: 1px solid #8c8c8c;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: border-color .15s;
+        }
+
+        .btn-add-cart:hover { 
+            border-color: #191919; 
+        }
+
+        .sell-strip {
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 16px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 10px;
+        }
+        .sell-text { 
+            font-size: 20px; 
+            font-weight: 400; 
+            color: #191919; 
+        }
+        .sell-link { 
+            color: #e53238; 
+            font-style: italic; 
+        }
+        .sell-btns { 
+            display: flex; 
+            gap: 8px; 
+        }
+        .sell-btn-outline {
+            padding: 8px 16px;
+            border: 1px solid #8c8c8c;
+            border-radius: 20px;
+            background: #fff;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .sell-btn-outline:hover { 
+            border-color: #191919; 
+        }
+        .sell-btn-solid {
+            padding: 8px 16px;
+            border: none;
+            border-radius: 20px;
+            background: #191919;
+            color: #fff;
+            font-size: 13px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+        .sell-btn-solid:hover { 
+            background: #333; 
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main>
+        <div class="product-description-section">
+            <div class="product-image">
+                <img src="../images/Other/Card.webp" alt="Product Image">
+            </div>
+            
+            <div class="product-details">
+                <h1 class="product-title">Charizaed 004/102 Base Set (Shadowless) Holo</h1>
+                
+                <div class="product-info">
+                <div class="seller-logo">A</div>
+                <div class="seller-details">
+                    <span class="seller-name-link"><strong>Ash</strong> <span class="seller-count">(200)</span></span>
+                    <div class="seller-meta">
+                    <span class="positive">90.7% positive</span>
+                    <span class="sep">·</span>
+                    <span>Seller's other items</span>
+                    <span class="sep">·</span>
+                    <span>Contact seller</span>
+                    </div>
+                </div>  
+                <span class="seller-arrow">›</span>
+                </div>
+
+                <div class="product-price">
+                <div class="product-price-main">US $39.99</div>
+                <div class="product-price-list">List price <span class="price-strike">US $84.99</span> (53% off) <span class="price-info-icon">ⓘ</span></div>
+                </div>
+
+                <div class="product-qty">
+                <span class="product-qty-label">Quantity:</span>
+                <input class="product-qty-input" type="number" value="1" min="1" max="10" />
+                <span class="product-sold-count">4,813 sold</span>
+                </div>
+
+                <div class="product-feature">
+                Pokemon card
+                </div>
+                <button class="btn-buy-now">Buy It Now</button>
+                <button class="btn-add-cart">Add to cart</button>
+                <div class="sell-strip">
+                    <div class="sell-text">Have one to <span class="sell-link">sell</span>?</div>
+                    <div class="sell-btns">
+                        <button class="sell-btn-outline">Sell something else</button>
+                        <button class="sell-btn-solid">Sell one like this</button>
+                    </div>
+                </div>
+
+
+        </div>
+    </main>
+</body>
+</html>
