@@ -83,7 +83,7 @@
             padding-left: 40px;
         }
 
-        .product-card {
+        .product-item {
             display: flex;
             flex-direction: column;
             background: rgb(255, 255, 255);
@@ -93,26 +93,18 @@
         }
 
         .product-image {
-            height: 280px;
-            width: 300px;
-            background: #d9d9d9;
-            border-radius: 10px;
             position: relative;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 290px;
+            border-radius: 10px;
         }
 
         .product-image:hover {
             transform: scale(1.08);
             transition: transform 0.3s ease;
-        }
-
-        .product-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 10px;
         }
 
         .product-image span {
@@ -130,25 +122,23 @@
             height: 20px;
         }
 
-        .product-card p {
+        .product-name {
+            margin: 14px 0 2px 0;
+        }
+
+        .product-price {
+            margin: 10px 0 8px 0;
+        }
+
+        .product-price strong {
+            font-size: 30px;
+            margin-right: 15px;
+        }
+
+        .product-old-price {
             font-size: 14px;
-            margin: 10px 0;
-            color: #444;
-        }
-
-        .price {
-            display: flex;
-            gap: 10px;
-        }
-
-        .new {
-            font-weight: bold;
-            font-size: x-large;
-        }
-
-        .old {
             text-decoration: line-through;
-            color: #aaa;
+            color: #9A9A9A;
         }
 
         .load-more {
@@ -206,28 +196,27 @@
                 <!--Products-->
                 <section class="products-container">
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
-                            <img src="../images/Profile Page/product1.jpg" alt="Product 1">
+                            <img src="../images/Profile Page/product1.jpg" alt="Pendant">
                             <span>
                                 <img src="../images/Logo/cart-shopping-solid.png" alt="shopping cart icon">
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>3pcs Round Pendant Necklace, Suitable For Everyday Wear</h3>
-                            <p>Pendant made from high-quality materials.</p>
+                            <h3 class="product-name">3pcs Round Pendant Necklace, Suitable For Everyday Wear</h3>
 
-                            <div class="price">
-                                <span class="new">$9.99</span>
-                                <span class="old">$12.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$9.99</strong>
+                                <span class="product-old-price">$12.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Clothes/Cardigan.webp" alt="Product 1">
@@ -236,19 +225,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Cardigan</h3>
-                            <p>Cardigan made from wool.</p>
+                            <h3 class="product-name">Cardigan</h3>
 
-                            <div class="price">
-                                <span class="new">$9.99</span>
-                                <span class="old">$14.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$9.99</strong>
+                                <span class="product-old-price">$14.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Watches/Tissot.webp" alt="Product 1">
@@ -257,19 +245,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Tissot Watch</h3>
-                            <p>Swiss-made watch with a stainless steel case and bracelet.</p>
+                            <h3 class="product-name">Tissot Watch</h3>
 
-                            <div class="price">
-                                <span class="new">$39.99</span>
-                                <span class="old">$49.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$39.99</strong>
+                                <span class="product-old-price">$49.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Other/Yarn.webp" alt="Product 1">
@@ -278,19 +265,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Yarn</h3>
-                            <p>High-quality yarn for knitting and crocheting.</p>
+                            <h3 class="product-name">Yarn</h3>
 
-                            <div class="price">
-                                <span class="new">$10.99</span>
-                                <span class="old">$20.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$10.99</strong>
+                                <span class="product-old-price">$20.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Shoes/Ouma.webp" alt="Product 1">
@@ -299,19 +285,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Puma Shoes</h3>
-                            <p>Comfortable and stylish shoes for everyday wear.</p>
+                            <h3 class="product-name">Puma Shoes</h3>
 
-                            <div class="price">
-                                <span class="new">$119.99</span>
-                                <span class="old">$229.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$119.99</strong>
+                                <span class="product-old-price">$229.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Shoes/Converse.webp" alt="Product 1">
@@ -320,19 +305,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Converse Shoes</h3>
-                            <p>Classic and comfortable shoes for everyday wear.</p>
+                            <h3 class="product-name">Converse Shoes</h3>
 
-                            <div class="price">
-                                <span class="new">$90.99</span>
-                                <span class="old">$110.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$90.99</strong>
+                                <span class="product-old-price">$110.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Clothes/hoodie.webp" alt="Product 1">
@@ -341,19 +325,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Hoodie</h3>
-                            <p>Comfortable and stylish hoodie for everyday wear.</p>
+                            <h3 class="product-name">Hoodie</h3>
 
-                            <div class="price">
-                                <span class="new">$19.99</span>
-                                <span class="old">$29.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$19.99</strong>
+                                <span class="product-old-price">$29.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Electronics/Laptop.webp" alt="Product 1">
@@ -362,19 +345,18 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Dell Laptop</h3>
-                            <p>High-performance laptop for work and play.</p>
+                            <h3 class="product-name">Dell Laptop</h3>
 
-                            <div class="price">
-                                <span class="new">$339.99</span>
-                                <span class="old">$449.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$339.99</strong>
+                                <span class="product-old-price">$449.99</span>
+                            </p>
                         </div>
                     </div>
 
-                    <div class="product-card">
+                    <div class="product-item">
 
                         <div class="product-image">
                             <img src="../images/Other/Lipstick.webp" alt="Product 1">
@@ -383,15 +365,14 @@
                             </span>
                         </div>
 
-                        <div class="product-info">
+                        <div>
                             <br>
-                            <h3>Merle Norman Lipstick</h3>
-                            <p>Highly pigmented lipstick with long-lasting color.</p>
+                            <h3 class="product-name">Merle Norman Lipstick</h3>
 
-                            <div class="price">
-                                <span class="new">$29.99</span>
-                                <span class="old">$39.99</span>
-                            </div>
+                            <p class="product-price">
+                                <strong>$29.99</strong>
+                                <span class="product-old-price">$39.99</span>
+                            </p>
                         </div>
                     </div>
 
