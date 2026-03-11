@@ -9,3 +9,7 @@ function showCart() {
 function sellAlert() {
     alert("To sell an item, please log in or register an account.");
 }
+
+function addCart() {
+    alert("Item added to cart!");
+}  
