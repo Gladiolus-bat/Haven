@@ -363,24 +363,24 @@
         <section>
             <div class="header-top">
                 <a href="#" class="Sell" onclick="sellAlert()">Sell</a>
-                <a href="/pages/login.html">Login</a>
+                <a href="pages/login.html">Login</a>
                 or
-                <a href="/pages/register.html">Register</a>
+                <a href="pages/register.html">Register</a>
             </div>
             <div class="header-main">
                 <div class="logo">
-                    <a href="../index.html"><img src="../images/logo.png" alt="Logo of Haven"></a>
+                    <a href="index.html"><img src="images/logo.png" alt="Logo of Haven"></a>
                 </div>
 
                 <div class="search-bar">
-                    <a href="#" class="search"><img src="../images/Header/search.png" alt="Search"></a>
+                    <a href="#" class="search"><img src="images/Header/search.png" alt="Search"></a>
                     <input type="text" placeholder="Search ">
-                    <a href="#" class="up-arrow"><img src="../images/Header/up.png" alt="Search"></a>
+                    <a href="#" class="up-arrow"><img src="images/Header/up.png" alt="Search"></a>
                 </div>
 
                 <div class="header-icons">
-                    <a href="#" onclick="showNotification()"><img src="../images/Header/notification.png" alt="Notification"></a>
-                    <a href="#" onclick="showCart()"><img src="../images/Header/cart.png" alt="Cart"></a>
+                    <a href="#" onclick="showNotification()"><img src="images/Header/notification.png" alt="Notification"></a>
+                    <a href="#" onclick="showCart()"><img src="images/Header/cart.png" alt="Cart"></a>
                 </div>
             </div>
         </section>
@@ -394,7 +394,7 @@
                 Discover amazing products at unbeatable prices.
             </p>
             <button class="hero-shop-btn">
-                <a href="/pages/productPage.html" style="text-decoration:none;color:black;">Shop Now</a>
+                <a href="pages/productPage.html" style="text-decoration:none;color:black;">Shop Now</a>
             </button>
         </div>
     </main>
@@ -430,7 +430,7 @@
             <p>Shop now and experience the best deals on our marketplace.</p>
         </div>
         <button class="shop-now-cta-but">
-            <a href="/pages/productPage.html">Shop Now</a>
+            <a href="pages/productPage.html">Shop Now</a>
         </button>
     </section>
 
@@ -439,7 +439,7 @@
         <h2>Today's Picks</h2>
         <!--8 products for now-->
         <div class="grid">
-            <a class="grid-card" a href="/pages/productDetails.html">
+            <a class="grid-card" a href="pages/productDetails.html">
                 <div class="grid-card-img"></div>
                 <p class="grid-card-title">Product Name</p>
                 <div class="grid-card-price">
@@ -517,14 +517,14 @@
     <footer>
         <section>
             <div class="footer">
-                <img src="../images/logo.png" alt="Haven Logo">
+                <img src="images/logo.png" alt="Haven Logo">
                 <nav>
                     <ul>
                         <li>
                             <h2>Quick Links</h2>
                         </li>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="../pages/productPage.html">Products</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pages/productPage.html">Products</a></li>
                     </ul>
                 </nav>
                 <nav>
@@ -532,11 +532,11 @@
                         <li>
                             <h2>Products</h2>
                         </li>
-                        <li><a href="../pages/electronics.html">Electronics</a></li>
-                        <li><a href="../pages/jewelry.html">Jewelry</a></li>
-                        <li><a href="../pages/watches.html">Watches</a></li>
-                        <li><a href="../pages/clothes.html">Clothes</a></li>
-                        <li><a href="../pages/others.html">Others</a></li>
+                        <li><a href="pages/electronics.html">Electronics</a></li>
+                        <li><a href="pages/jewelry.html">Jewelry</a></li>
+                        <li><a href="pages/watches.html">Watches</a></li>
+                        <li><a href="pages/clothes.html">Clothes</a></li>
+                        <li><a href="pages/others.html">Others</a></li>
                     </ul>
                 </nav>
             </div>
@@ -555,7 +555,7 @@
     </footer>
 
     <!-- For normal pop ups-->
-    <script src="/javascript/script.js"></script>
+    <script src="javascript/script.js"></script>
 
     <!-- Marquee Functionality -->
     <script>
@@ -569,7 +569,7 @@
         [...categories, ...categories].forEach(name => {
             track.innerHTML += `
                 <a class="card" href="/pages/${name.toLowerCase()}.html">
-                    <div class="card-img" style="background-image: url('/images/${name.toLowerCase()}.jpg');"></div> 
+                    <div class="card-img" style="background-image: url('images/${name.toLowerCase()}.jpg');"></div> 
                     <p class="card-title" style="font-size: 1.1rem;">${name}</p>
                 </a>
             `;
