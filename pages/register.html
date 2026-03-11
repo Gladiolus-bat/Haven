@@ -2,197 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Haven - Register</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Haven - Register</title>
 
-    <style>
-        body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: #f5f5f5;
-}
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #fff;
-  padding: 1rem 2rem;
-  border-bottom: 1px solid #ddd;
-}
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #fff;
+      padding: 1rem 2rem;
+      border-bottom: 1px solid #ddd;
+    }
 
-.logo {
-  font-size: 1.5rem;
-  color: #0077cc;
-  font-weight: bold;
-}
+    .logo {
+      font-size: 1.5rem;
+      color: #0077cc;
+      font-weight: bold;
+    }
 
-.nav-links {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-}
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
 
-.nav-links a {
-  text-decoration: none;
-  color: #333;
-}
+    .nav-links a {
+      text-decoration: none;
+      color: #333;
+    }
 
-.icons span {
-  margin-left: 1rem;
-  cursor: pointer;
-}
+    .icons span {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
 
-.container {
-  display: flex;
-  min-height: 80vh;
-}
+    .register-container {
+      display: flex;
+      min-height: 80vh;
+      gap: 20px;
+    }
 
-.left {
-  flex: 1;
-  background: #ccc;
-}
+    .left {
+      width: 800px;
+      background-image: url(../images/Logo/RegisterBG.jpg);
+      background-size: cover;
+      background-position: center;
+    }
 
-.right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #fff;
-}
+    .right {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-left: #0000004f 1px solid;
+    }
 
-.register-form {
-  width: 80%;
-  max-width: 400px;
-}
+    .register-form {
+      width: 80%;
+      max-width: 400px;
+    }
 
-.register-form h2 {
-  margin-bottom: 1rem;
-}
+    .register-form h2 {
+      margin-bottom: 1rem;
+    }
 
-.register-form label {
-  display: block;
-  margin-top: 1rem;
-}
+    .register-form label {
+      display: block;
+      margin-top: 16px;
+    }
 
-.register-form input[type="text"],
-.register-form input[type="tel"],
-.register-form input[type="password"] {
-  width: 100%;
-  padding: 0.5rem;
-  margin-top: 0.3rem;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-}
+    .register-form input[type="text"],
+    .register-form input[type="tel"],
+    .register-form input[type="password"] {
+      width: 90%;
+      padding: 8px;
+      margin-top: 0.3rem;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
 
-.checkbox {
-  margin-top: 1rem;
-}
+    .form-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-.btn {
-  width: 100%;
-  padding: 0.7rem;
-  margin-top: 1rem;
-  background: #0077cc;
-  color: #fff;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    .checkbox {
+      margin-top: 16px;
+    }
 
-.forgot {
-  display: block;
-  margin-top: 0.5rem;
-  color: red;
-  text-decoration: none;
-}
+    .btn {
+      width: 95%;
+      padding: 0.7rem;
+      margin-top: 16px;
+      background: #0077cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-.note {
-  font-size: 0.8rem;
-  color: #666;
-  margin-top: 1rem;
-}
+    .forgot {
+      display: block;
+      margin-top: 8px;
+      color: red;
+      text-decoration: none;
+    }
 
-.login-btn {
-  width: 100%;
-  padding: 0.7rem;
-  margin-top: 1rem;
-  background: #ccc;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
+    .note {
+      font-size: 8px;
+      color: #666;
+      margin-top: 16px;
+    }
 
-footer {
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.8rem;
-}
+    .login-btn {
+      width: 100%;
+      padding: 0.7rem;
+      margin-top: 1rem;
+      background: #ccc;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
 
-    </style>
+    footer {
+      padding: 16px;
+      text-align: center;
+      font-size: 14px;
+    }
+  </style>
 
 </head>
 
 <body>
-    <header>
+  <header>
 
-    </header>
+  </header>
 
-    <main>
+  <main>
 
-        <div class="register-container">
+    <div class="register-container">
 
-            <div class="left"></div>
+      <div class="left">
+      </div>
 
-            <div class="right">
+      <div class="right">
 
-                <form class="register-form">
+        <form class="register-form">
 
-                    <h2>Create Account</h2>
+          <h2>Register</h2>
 
-                    <label for="name">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required>
+          <div class="form-container">
+            <label for="name" style="align-self: flex-start;">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
 
-                    <label for="phone">Phone Number</label>
-                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            <label for="phone" style="align-self: flex-start;">Phone Number</label>
+            <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password" placeholder="Enter your password" required>
+            <label for="password" style="align-self: flex-start;">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
 
-                    <div class="checkbox">
-                        <input type="checkbox" name="checkbox" id="terms">
-                        <label for="terms">I have read and agree to the <a href="#">Terms of Service</a></label>
-                    </div>
-
-                    <button type="submit" class="btn">Register</button>
-
-                    <a href="#" class="forgot">Forgot Password?</a>
-
-                    <p class="note">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of
-                        Service apply.</p>
-
-                    <button class="login-btn">Already have an account? <a href="../pages/login.html">Login</a></button>
-                </form>
-
+            <div class="checkbox">
+              <label for="terms"> <input type="checkbox" name="checkbox" id="terms">
+                <span style="font-size: 12px;">I have read and agree to the <a href="#">Terms of
+                    Service</a></span></label>
             </div>
 
-        </div>
-    </main>
+            <button type="submit" class="btn">Register</button>
 
-    <!-- Footer -->
-    <footer>
-        <p>
-            Copyright &copy; 2026 Haven. All Rights Reserved.
-            <a href="#" class="copyright">Accessibility</a>,
-            <a href="#" class="copyright">User Agreement</a>,
-            <a href="#" class="copyright">Privacy</a>,
-            <a href="#" class="copyright">Consumer Health Data</a>,
-            <a href="#" class="copyright">Payments Terms of Use</a>,
-            <a href="#" class="copyright">Cookies</a>,
-            <a href="#" class="copyright">CA Privacy Notice</a>.
-        </p>
-    </footer>
+            <a href="#" class="forgot">Forgot Password?</a>
+
+            <p class="note">This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of
+              Service apply.</p>
+          </div>
+
+
+          <button class="login-btn">Already have an account? <a href="../pages/login.html">Login</a></button>
+        </form>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      Copyright &copy; 2026 Haven. All Rights Reserved.
+      <a href="#" class="copyright">Accessibility</a>,
+      <a href="#" class="copyright">User Agreement</a>,
+      <a href="#" class="copyright">Privacy</a>,
+      <a href="#" class="copyright">Consumer Health Data</a>,
+      <a href="#" class="copyright">Payments Terms of Use</a>,
+      <a href="#" class="copyright">Cookies</a>,
+      <a href="#" class="copyright">CA Privacy Notice</a>.
+    </p>
+  </footer>
 
 </body>
 
