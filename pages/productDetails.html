@@ -466,8 +466,8 @@
                 </div>
 
                 <div class="header-icons">
-                    <a href="#"><img src="../images/Header/notification.png" alt="Notification"></a>
-                    <a href="#"><img src="../images/Header/cart.png" alt="Cart"></a>
+                    <a href="#" onclick="showNotification()"><img src="../images/Header/notification.png" alt="Notification"></a>
+                    <a href="#" onclick="showCart()"><img src="../images/Header/cart.png" alt="Cart"></a>
                 </div>
             </div>
         </section>
@@ -523,16 +523,16 @@
                     functions, Detachable Cable, Noise Cancellation, Rechargeable Battery, Replaceable Earpads, Touch
                     Control, Volume Control, Aware Mode, Immersion Mode</p>
 
-                <button class="btn-buy">Buy It Now</button>
-                <button class="btn-cart">Add to cart</button>
+                <button class="btn-buy"><a href="/payment.html" style="text-decoration: none; color:white">Buy It Now</a></button>
+                <button class="btn-cart" onclick="addCart()">Add to cart</button>
 
                 <div class="sell-banner">
                     <div class="sell-banner-img"></div> <!-- swap with <img src="..."> later -->
                     <div class="sell-banner-text">
                         <p>Have one to <span>sell?</span></p>
                         <div class="sell-actions">
-                            <button class="btn-sell-outline">Sell something else</button>
-                            <button class="btn-sell-dark">Sell one like this</button>
+                            <button class="btn-sell-outline" onclick="sellAlert()">Sell something else</button>
+                            <button class="btn-sell-dark" onclick="sellAlert()">Sell one like this</button>
                         </div>
                     </div>
                 </div>
@@ -620,6 +620,8 @@
         </section>
 
     </main>
+
+    <script src="/javascript/script.js"></script>
 </body>
 
 </html>
