@@ -474,96 +474,71 @@
     </header>
 
     <main>
-        <div class="product-description-section">
-            <div class="product-image">
-                <img src="../images/Other/Card.webp" alt="Product Image">
-            </div>
 
-            <div class="product-details">
-                <h1 class="product-title">Charizaed 004/102 Base Set (Shadowless) Holo</h1>
+        <!-- Product Page -->
+    <section class="product-page">
 
-                <div class="product-info">
-                    <div class="seller-logo">A</div>
-                    <div class="seller-details">
-                        <span class="seller-name-link"><strong>Ash</strong> <span
-                                class="seller-count">(200)</span></span>
-                        <div class="seller-meta">
-                            <span class="positive">90.7% positive</span>
-                            <span class="sep">·</span>
-                            <span>Seller's other items</span>
-                            <span class="sep">·</span>
-                            <span>Contact seller</span>
-                        </div>
-                    </div>
-                    <span class="seller-arrow">›</span>
-                </div>
-
-                <div class="product-price">
-                    <div class="product-price-main">US $39.99</div>
-                    <div class="product-price-list">List price <span class="price-strike">US $84.99</span> (53% off)
-                        <span class="price-info-icon">ⓘ</span></div>
-                </div>
-
-                <div class="product-qty">
-                    <span class="product-qty-label">Quantity:</span>
-                    <input class="product-qty-input" type="number" value="1" min="1" max="10" />
-                    <span class="product-sold-count">4,813 sold</span>
-                </div>
-
-                <div class="product-feature">
-                    Pokemon card
-                </div>
-                <button class="btn-buy-now">Buy It Now</button>
-                <button class="btn-add-cart">Add to cart</button>
-                <div class="sell-strip">
-                    <div class="sell-text">Have one to <span class="sell-link">sell</span>?</div>
-                    <div class="sell-btns">
-                        <button class="sell-btn-outline">Sell something else</button>
-                        <button class="sell-btn-solid">Sell one like this</button>
-                    </div>
-                </div>
+        <!-- Left: Images -->
+        <div class="product-images">
+            <div class="product-main-img"></div>
+            <div class="product-thumbnails">
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
+                <div class="thumbnail"></div>
             </div>
         </div>
-        </div>
 
-        <!-- Items You Might Like section -->
-        <div class="similar-items-strip">
-            <h2>Items You Might Like</h2>
-            <div class="similar-items-products">
-                <div class="similar-item-product">
-                    <div class="similar-item-product-img"><img src="../images/Other/Minoxidil.webp" alt="Product 1">
-                    </div>
-                    <p class="similar-item-product-name">Kirkland Minoxidil 5 Topical Solution Extra Strength Hair
-                        Regrowth Treatment 1</p>
-                    <div class="similar-item-product-price">
-                        <span class="similar-item-price">$22.50</span>
-                    </div>
+        <!-- Right: Details -->
+        <div class="product-details">
+
+            <button class="back-btn" onclick="history.back()">
+                Back
+            </button>
+
+            <h1 class="product-title">Bose QuietComfort Ultra Noise Cancelling Headphones, Certified Refurbished</h1>
+
+            <a href="/pages/profile.html" class="seller-link">
+                <div class="seller-avatar"></div>
+                <div class="seller-info">
+                    <span class="seller-name">Bose (71222)</span>
+                    <span class="seller-meta">99.7% positive · Seller's other items · Contact seller</span>
                 </div>
-                <div class="similar-item-product">
-                    <div class="similar-item-product-img"><img src="../images/Other/Cups.webp" alt="Product 2"></div>
-                    <p class="similar-item-product-name">Mini Small Thermos Coffee Mug Capacity Vacuum Cup Leakproof
-                        Flask Leak-proof UK</p>
-                    <div class="similar-item-product-price">
-                        <span class="similar-item-price">$3.99</span>
-                    </div>
-                </div>
-                <div class="similar-item-product">
-                    <div class="similar-item-product-img"><img src="../images/Other/Table.webp" alt="Product 3"></div>
-                    <p class="similar-item-product-name">Vintage Folding Floral Metal Lap Tray TV Retro Mid Century Bed
-                    </p>
-                    <div class="similar-item-product-price">
-                        <span class="similar-item-price">$20.00</span>
-                    </div>
-                </div>
-                <div class="similar-item-product">
-                    <div class="similar-item-product-img"><img src="../images/Other/Drill.webp" alt="Product 4"></div>
-                    <p class="similar-item-product-name">Milwaukee M18 Fuel 1/2" 18V Cordless Hammer Drill - 2904-20</p>
-                    <div class="similar-item-product-price">
-                        <span class="similar-item-price">$123.99</span>
+                <span class="seller-arrow">›</span>
+            </a>
+
+            <div class="product-pricing">
+                <span class="product-price">US $215.00</span>
+                <span class="product-old-price">US $440.00</span>
+                <span class="product-discount">52% off</span>
+            </div>
+
+            <div class="product-quantity">
+                <label for="qty">Quantity:</label>
+                <input type="number" id="qty" value="1" min="1">
+                <span class="sold-count">4,813 sold</span>
+            </div>
+
+            <p class="product-features">Adjustable Headband, Built-in Microphone, Built-In On/Off Switch, Call
+                functions, Detachable Cable, Noise Cancellation, Rechargeable Battery, Replaceable Earpads, Touch
+                Control, Volume Control, Aware Mode, Immersion Mode</p>
+
+            <button class="btn-buy">Buy It Now</button>
+            <button class="btn-cart">Add to cart</button>
+
+            <div class="sell-banner">
+                <div class="sell-banner-img"></div> <!-- swap with <img src="..."> later -->
+                <div class="sell-banner-text">
+                    <p>Have one to <span>sell?</span></p>
+                    <div class="sell-actions">
+                        <button class="btn-sell-outline">Sell something else</button>
+                        <button class="btn-sell-dark">Sell one like this</button>
                     </div>
                 </div>
             </div>
+
         </div>
+    </section>
+
     </main>
 </body>
 
