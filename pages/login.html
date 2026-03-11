@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Haven - Register</title>
+  <title>Haven - Login</title>
 
   <style>
     body {
@@ -43,7 +43,7 @@
       cursor: pointer;
     }
 
-    .register-container {
+    .login-container {
       display: flex;
       min-height: 80vh;
       gap: 20px;
@@ -150,7 +150,7 @@
 
   <main>
 
-    <div class="register-container">
+    <div class="login-container">
 
       <div class="left">
       </div>
@@ -160,24 +160,16 @@
         <form class="register-form">
 
           <div class="form-container">
-            <h2 style="width: 377.6px;">Register</h2>
 
-            <label for="name" style="width: 377.6px;">Name :</label>
-            <input type="text" id="name" placeholder="Enter your name" required>
+            <h2 style="width: 377.6px;">Login</h2>
 
             <label for="phone" style="width: 377.6px;">Phone Number :</label>
             <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
-            <label for="password" style="width: 377.6px;">Password :</label>
+            <label for="password" style="width: 377.6px;">Password : </label>
             <input type="password" id="password" placeholder="Enter your password" required>
 
-            <div class="checkbox" style="width: 377.6px;">
-              <label for="terms"> <input type="checkbox" name="checkbox" id="terms">
-                <span style="font-size: 12px;">I have read and agree to the <a href="#">Terms of
-                    Service</a></span></label>
-            </div>
-
-            <button type="submit" class="btn">Register</button>
+            <button type="submit" class="btn">Login</button>
 
             <a href="#" class="forgot">Forgot Password?</a>
 
@@ -186,7 +178,7 @@
           </div>
 
 
-          <button class="login-btn">Already have an account? <a href="../pages/login.html">Login</a></button>
+          <button class="login-btn">Don't have an account? <a href="../pages/register.html">Sign Up</a></button>
         </form>
 
       </div>
