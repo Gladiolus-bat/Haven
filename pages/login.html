@@ -5,42 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Haven - Login</title>
+  <link rel="stylesheet" href="../css/style.css">
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      background: #fff;
-      padding: 1rem 2rem;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .logo {
-      font-size: 1.5rem;
-      color: #0077cc;
-      font-weight: bold;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    .nav-links a {
+    .header-center a {
+      margin: 0 24px;
       text-decoration: none;
-      color: #333;
-    }
-
-    .icons span {
-      margin-left: 1rem;
-      cursor: pointer;
+      color: #666;
     }
 
     .login-container {
@@ -61,7 +32,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      border-left: #0000004f 1px solid;
+      border-left: #ddd 1px solid;
     }
 
     .register-form {
@@ -137,15 +108,32 @@
       padding: 16px;
       text-align: center;
       font-size: 14px;
-      border-top: #0000004f 1px solid;
+      border-top: #ddd 1px solid;
     }
   </style>
 
 </head>
 
 <body>
+  <!-- Header -->
   <header>
+    <section>
+      <div class="header-main">
+        <div class="logo">
+          <a href="../index.html"><img src="../images/logo.png" alt="Logo of Haven"></a>
+        </div>
 
+        <div class="header-center">
+          <a href="../index.html">HOME</a>
+          <a href="/pages/productPage.html">SHOP</a>
+        </div>
+
+        <div class="header-icons">
+          <a href="#"><img src="../images/Header/notification.png" alt="Notification"></a>
+          <a href="#"><img src="../images/Header/cart.png" alt="Cart"></a>
+        </div>
+      </div>
+    </section>
   </header>
 
   <main>
@@ -161,15 +149,15 @@
 
           <div class="form-container">
 
-            <h2 style="width: 377.6px;">Login</h2>
+            <h2 style="width: 360px;">Login</h2>
 
-            <label for="phone" style="width: 377.6px;">Phone Number :</label>
+            <label for="phone" style="width: 360px;">Phone Number :</label>
             <input type="tel" id="phone" placeholder="Enter your phone number" required>
 
-            <label for="password" style="width: 377.6px;">Password : </label>
+            <label for="password" style="width: 360px;">Password : </label>
             <input type="password" id="password" placeholder="Enter your password" required>
 
-            <button type="submit" class="btn">Login</button>
+            <button type="submit" class="btn" style="width: 360px;">Login</button>
 
             <a href="#" class="forgot">Forgot Password?</a>
 
