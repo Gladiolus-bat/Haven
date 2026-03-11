@@ -28,7 +28,7 @@
             justify-content: center;
             align-items: center;
             padding: 3rem;
-            background: rgb(79, 69, 217);
+            background-image: linear-gradient(to bottom right, #45a3d9, #4f45d9);
         }
 
         /* Payment Card */
@@ -146,7 +146,7 @@
             width: 240px;
             padding: 0.7rem;
             margin-top: 16px;
-            background: rgb(54, 54, 205);
+            background-image: linear-gradient(to bottom right, #45a3d9, #4f45d9);
             color: white;
             border: none;
             border-radius: 24px;
@@ -155,7 +155,8 @@
         }
 
         .btn-play:hover {
-            background: #3a4246;
+            transform: translateY(-3px);
+            transition: transform 0.2s ease;
         }
 
         .divider {
@@ -260,7 +261,7 @@
 
             <div class="right">
                 <span class="or-text">OR</span>
-                <p class="game-text">Play this game and get a chance to win a discount voucher</p>
+                <p class="game-text">Play this game and get a chance to win a discount voucher!</p>
                 <div class="game-img"></div>
                 <button class="btn-play"><a href="https://rujalrazz.github.io/mini-game-portal/games.html"
                         style="text-decoration: none; color:white; font-size:1rem;">Play now</a></button>
