@@ -90,179 +90,216 @@
 
         /*Marquee Category Section, Refer to .track to change visibility*/
 
-        .categories{
+        .categories {
             width: 100%;
             padding: 3rem 0;
             /* 48px 0 */
         }
 
-        .categories h2{
-            font-family:'Times New Roman', Times, serif;
+        .categories h2 {
+            font-family: 'Times New Roman', Times, serif;
             font-size: 2rem;
             /* 32px */
             font-weight: bold;
             font-style: italic;
-            margin-bottom: 1rem; /* 32px */
+            margin-bottom: 1rem;
+            /* 32px */
             /* 8px */
             text-align: center;
         }
 
-        .categories-subtext p{
+        .categories-subtext p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             font-size: 1rem;
             /* 16px */
-            font-weight:light;
+            font-weight: light;
             color: #545454;
             text-align: center;
             margin-bottom: 2rem;
         }
 
-        .track-player{
-            position: relative; /* For absolute positioning of track, Gradients don't work otherwise. */
-            overflow: hidden; /* Hide scrollbars, Important for this marquee */
+        .track-player {
+            position: relative;
+            /* For absolute positioning of track, Gradients don't work otherwise. */
+            overflow: hidden;
+            /* Hide scrollbars, Important for this marquee */
         }
 
-        .track-player::before, .track-player::after{
-            content: ""; /*Mainly for gradient overlays for fade effect */
+        .track-player::before,
+        .track-player::after {
+            content: "";
+            /*Mainly for gradient overlays for fade effect */
             position: absolute;
             top: 0;
             bottom: 0;
             width: 10%;
             height: 100%;
-            z-index: 2; /* Ensure they are above the track for a proper fade */
+            z-index: 2;
+            /* Ensure they are above the track for a proper fade */
         }
 
-        .track-player::before{
+        .track-player::before {
             left: 0;
-            background: linear-gradient(to right, #ecfaff, transparent); /* Adds the light blue gradient on the left side */
+            background: linear-gradient(to right, #ecfaff, transparent);
+            /* Adds the light blue gradient on the left side */
         }
 
-        .track-player::after{
+        .track-player::after {
             right: 0;
-            background: linear-gradient(to left, #ecfaff, transparent); /* Adds the light blue gradient on the right side */
+            background: linear-gradient(to left, #ecfaff, transparent);
+            /* Adds the light blue gradient on the right side */
         }
+
         .track {
             display: flex;
-            gap:1.129rem; /* 18px */
-            width: max-content; /* Allow track to expand based on content */
+            gap: 1.129rem;
+            /* 18px */
+            width: max-content;
+            /* Allow track to expand based on content */
             padding: 1rem 0;
-            animation: scroll 28s linear infinite; /* Less seconds = More Faster */
+            animation: scroll 28s linear infinite;
+            /* Less seconds = More Faster */
         }
+
         .track:hover {
-            animation-play-state: paused; /* Pause the marquee on hover*/
-        } 
-        
+            animation-play-state: paused;
+            /* Pause the marquee on hover*/
+        }
+
         @keyframes scroll {
             from {
                 transform: translateX(0);
             }
+
             to {
-                transform: translateX(-50%); /* Makes the marquee from right to left, by 50% of max width*/
+                transform: translateX(-50%);
+                /* Makes the marquee from right to left, by 50% of max width*/
             }
         }
 
         .card {
             cursor: pointer;
             text-decoration: none;
-            width:14rem;/* 224px */
+            width: 14rem;
+            /* 224px */
         }
 
-        .card-img{
+        .card-img {
             width: 14rem;
             height: 14rem;
-            border-radius:0.5rem; /* 8px */
-            background: rgb(187, 187, 187); /* Only a box for images, add images through JS, not here. */
-            transition: transform 0.3s, box-shadow 0.3s; /* Not really necessary, but useful scaling */
+            border-radius: 0.5rem;
+            /* 8px */
+            background: rgb(187, 187, 187);
+            /* Only a box for images, add images through JS, not here. */
+            transition: transform 0.3s, box-shadow 0.3s;
+            /* Not really necessary, but useful scaling */
         }
 
-        .card .card-img{
+        .card .card-img {
             transition: transform 0.3s, box-shadow 0.3s;
-            transform-origin:bottom;
+            transform-origin: bottom;
         }
 
         .card:hover .card-img {
-            transform:scaleX(1.5); /* Three options, either scaleX, scaleY or scale, Needs to be tested with images during polishing */
+            transform: scaleX(1.5);
+            /* Three options, either scaleX, scaleY or scale, Needs to be tested with images during polishing */
         }
 
-        .card p{
-            margin-top: 0.5rem; /* 8px */
-            font-size: 1rem; /* 16px */
+        .card p {
+            margin-top: 0.5rem;
+            /* 8px */
+            font-size: 1rem;
+            /* 16px */
             text-align: center;
             color: black;
         }
 
-        .card-title{
+        .card-title {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight:600;
+            font-weight: 600;
         }
 
-                /* Banner Section */
+        /* Banner Section */
 
-        .banner{
-            display:flex;
+        .banner {
+            display: flex;
             align-items: center;
-            gap: 3rem; /* 48px */
-            padding: 2rem 4.125rem; /* 32px 66px */
+            gap: 3rem;
+            /* 48px */
+            padding: 2rem 4.125rem;
+            /* 32px 66px */
         }
 
-        .banner-img{
+        .banner-img {
             width: 60%;
-            aspect-ratio: 4/3; /* Ensures the image is always a square, regardless of content */
+            aspect-ratio: 4/3;
+            /* Ensures the image is always a square, regardless of content */
             background: gray;
             border-radius: 1rem;
             flex-shrink: 0;
             background-image: url("../images/Home/outfits.webp");
+            background-size: cover;
+            background-position:center;
+            background-repeat: no-repeat;
         }
 
-        .banner-text{
+        .banner-text {
             flex: 1;
             text-align: right;
         }
 
-        .banner-text h2{
+        .banner-text h2 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.7rem; /* 32px */
+            font-size: 1.7rem;
+            /* 32px */
             font-weight: bold;
             margin-bottom: 1.5rem;
-            line-height:1.2;
-            color:#3a3a3a;
+            line-height: 1.2;
+            color: #3a3a3a;
         }
 
-        .banner-text p{
+        .banner-text p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1rem; /* 16px */
+            font-size: 1rem;
+            /* 16px */
             color: #545454;
-            line-height:1.4;
+            line-height: 1.4;
         }
 
         /* Shop Now CTA Section */
-        .shop-now-cta{
+        .shop-now-cta {
             display: flex;
             align-items: center;
             justify-content: space-between;
             background: black;
-            border-radius:1rem;
-            margin: 0 4rem 2rem; /* 0 64px 32px */
-            padding: 2rem; /* 32px */ 
+            border-radius: 1rem;
+            margin: 0 4rem 2rem;
+            /* 0 64px 32px */
+            padding: 2rem;
+            /* 32px */
             margin-top: 4rem;
         }
 
-        .shop-now-cta h3{
+        .shop-now-cta h3 {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.5rem; /* 24px */
+            font-size: 1.5rem;
+            /* 24px */
             font-weight: bold;
             color: white;
-            margin-bottom: 0.03rem; /* 0.5px */
+            margin-bottom: 0.03rem;
+            /* 0.5px */
         }
 
-        .shop-now-cta p{
+        .shop-now-cta p {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1rem; /* 16px */
-            margin-top:0.5rem; /* 8px */
+            font-size: 1rem;
+            /* 16px */
+            margin-top: 0.5rem;
+            /* 8px */
             color: #d0d0d0;
         }
 
-        .shop-now-cta-but{
+        .shop-now-cta-but {
             background-color: #ffffff;
             color: #333;
             border: none;
@@ -275,7 +312,7 @@
             cursor: pointer;
         }
 
-        .shop-now-cta-but a{
+        .shop-now-cta-but a {
             text-decoration: none;
             color: black;
         }
@@ -288,73 +325,89 @@
 
         /* Products Section */
 
-        .products{
-            margin: 0 4rem 4rem; /* 0 64px 64px */
-            padding: 2rem; /* 32px */
+        .products {
+            margin: 0 4rem 4rem;
+            /* 0 64px 64px */
+            padding: 2rem;
+            /* 32px */
         }
 
-        .products h2{
-            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Either Add DM SANS or Market SANS */
-            font-size: 1.7rem; /* 32px */
+        .products h2 {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            /* Either Add DM SANS or Market SANS */
+            font-size: 1.7rem;
+            /* 32px */
             font-weight: 700;
-            margin-bottom: 3.5rem; /* 56px */
+            margin-bottom: 3.5rem;
+            /* 56px */
         }
 
-        .grid{
+        .grid {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            gap: 1.5rem; /* 24px */
+            gap: 1.5rem;
+            /* 24px */
         }
 
-        .grid-card{
+        .grid-card {
             text-decoration: none;
         }
 
-        .grid-card-img{
-            width:100%;
-            aspect-ratio: 1/1; /* Ensures the image is always a square, regardless of content */
+        .grid-card-img {
+            width: 100%;
+            aspect-ratio: 1/1;
+            /* Ensures the image is always a square, regardless of content */
             background: rgb(163, 161, 161);
-            border-radius: 0.5rem; /* 8px */
-            margin-bottom: 0.8rem; /* 12px */
+            border-radius: 0.5rem;
+            /* 8px */
+            margin-bottom: 0.8rem;
+            /* 12px */
             transition: transform 0.3s ease, box-shadow 0.3s;
             cursor: pointer;
         }
 
-        .grid-card:hover .grid-card-img{
+        .grid-card:hover .grid-card-img {
             transform: translateY(-0.125rem);
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
         }
 
-        .grid-card-title{
+        .grid-card-title {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.1rem; /* 18px */
+            font-size: 1.1rem;
+            /* 18px */
             font-weight: bold;
-            line-height:1.4;
-            margin-bottom: 0.5rem; /* 8px */
-            overflow: hidden; /* Ensures that long titles don't break the layout */
+            line-height: 1.4;
+            margin-bottom: 0.5rem;
+            /* 8px */
+            overflow: hidden;
+            /* Ensures that long titles don't break the layout */
             color: black;
         }
 
-        .grid-card-price{
+        .grid-card-price {
             display: flex;
             align-items: center;
-            gap: 0.5rem; /* 8px */
+            gap: 0.5rem;
+            /* 8px */
         }
 
-        .discount-price{
+        .discount-price {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1.5625rem; /* 25px */
+            font-size: 1.5625rem;
+            /* 25px */
             font-weight: bold;
-            color: #000000; /* Red color for discount price */
+            color: #000000;
+            /* Red color for discount price */
         }
 
-        .actual-price{
+        .actual-price {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-size: 1rem; /* 16px */
-            color: #545454; 
-            text-decoration: line-through; /* Strikethrough */
+            font-size: 1rem;
+            /* 16px */
+            color: #545454;
+            text-decoration: line-through;
+            /* Strikethrough */
         }
-
     </style>
 </head>
 
@@ -380,7 +433,8 @@
                 </div>
 
                 <div class="header-icons">
-                    <a href="#" onclick="showNotification()"><img src="../images/Header/notification.png" alt="Notification"></a>
+                    <a href="#" onclick="showNotification()"><img src="../images/Header/notification.png"
+                            alt="Notification"></a>
                     <a href="#" onclick="showCart()"><img src="../images/Header/cart.png" alt="Cart"></a>
                 </div>
             </div>
@@ -414,13 +468,14 @@
         </div>
     </section>
 
-    <!--Banner--> 
+    <!--Banner-->
     <!--Needs review with design so please work on this after products-->
     <section class="banner">
         <div class="banner-img"></div>
         <div class="banner-text">
             <h2>Legit 'fits that are legit fresh</h2>
-            <p>Discover the latest trends in fashion and elevate your style with our curated collection of clothing and accessories.</p>
+            <p>Discover the latest trends in fashion and elevate your style with our curated collection of clothing and
+                accessories.</p>
         </div>
     </section>
 
