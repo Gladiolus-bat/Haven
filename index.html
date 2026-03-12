@@ -367,6 +367,18 @@
             /* 12px */
             transition: transform 0.3s ease, box-shadow 0.3s;
             cursor: pointer;
+            overflow:hidden;
+            position:relative;
+        }
+
+        .grid-card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
         }
 
         .grid-card:hover .grid-card-img {
@@ -498,39 +510,39 @@
         <h2>Today's Picks</h2>
         <!--8 products for now-->
         <div class="grid">
-            <a class="grid-card" a href="pages/productDetails.html">
-                <div class="grid-card-img"></div>
-                <p class="grid-card-title">Product Name</p>
+            <a class="grid-card" a href="pages/product_pendants.html">
+                <div class="grid-card-img"><img src="images/Jewellery/Product1.jpg" alt="Pendant"></div>
+                <p class="grid-card-title">3pcs Round Pendant Necklace, Suitable For Everyday Wear</p>
                 <div class="grid-card-price">
-                    <span class="discount-price">$200.00</span>
-                    <span class="actual-price">$2000.00</span>
+                    <span class="discount-price">$9.99</span>
+                    <span class="actual-price">$12.99</span>
                 </div>
             </a>
 
-            <a class="grid-card" a href="pages/">
+            <a class="grid-card" a href="pages/product_clothes.html">
                 <div class="grid-card-img"></div>
-                <p class="grid-card-title">Product Name</p>
+                <p class="grid-card-title">Milumia Women's Zip Cardigan Sweaters Boho Floral Printed Long Sleeve
+                    Knightwear Outerwear</p>
                 <div class="grid-card-price">
-                    <span class="discount-price">$200.00</span>
-                    <span class="actual-price">$2000.00</span>
+                    <span class="discount-price">$215.00</span>
+                    <span class="actual-price">$440.00</span>
                 </div>
             </a>
 
-            <a class="grid-card" a href="pages/">
+            <a class="grid-card" a href="pages/product_chargers.html">
                 <div class="grid-card-img"></div>
-                <p class="grid-card-title">Product Name</p>
+                <p class="grid-card-title">4 Ports USB PD Phone Car Charger Adapter LED Display Fast Charging
+                    Accessories</p>
                 <div class="grid-card-price">
-                    <span class="discount-price">$200.00</span>
-                    <span class="actual-price">$2000.00</span>
+                    <span class="discount-price">$7.15</span>
                 </div>
             </a>
 
-            <a class="grid-card" a href="pages/">
+            <a class="grid-card" a href="pages/product_charizard.html">
                 <div class="grid-card-img"></div>
-                <p class="grid-card-title">Product Name</p>
+                <p class="grid-card-title">Charizard 004/102 Base Set (ShadowLess) Holo</p>
                 <div class="grid-card-price">
-                    <span class="discount-price">$200.00</span>
-                    <span class="actual-price">$2000.00</span>
+                    <span class="discount-price">$350.00</span>
                 </div>
             </a>
 
@@ -615,22 +627,26 @@
 
     <!-- Marquee Functionality -->
     <script>
-        const categories = ['Electronics', 'Jewelry', 'Clothes', 'Watches', 'Laptops', 'Health & Beauty', 'Headphones', 'TVs'];
-        const track = document.getElementById('track'); // Track is the element ID from track class
+        const categories = [
+            { name: 'Electronics', file: 'electronics', ext: 'webp' },
+            { name: 'Jewelry', file: 'jewelry', ext: 'webp' },
+            { name: 'Clothes', file: 'clothes', ext: 'webp' },
+            { name: 'Watches', file: 'watches', ext: 'webp' },
+            { name: 'Laptops', file: 'laptops', ext: 'webp' },
+            { name: 'Health & Beauty', file: 'health-beauty', ext: 'webp' },
+            { name: 'Headphones', file: 'headphones', ext: 'webp' },
+            { name: 'TVs', file: 'tvs', ext: 'webp' },
+        ];
 
-        // Now this is a really interesting concept, '...categories' is a spread operator. 
-        // We're basically unpacking all the elements of categories twice and storing it in forEach loop. 
-        // The loop continues from right to left, repeating almost x2 the categories and acting like it's a marquee.
-        //Reference: https://www.youtube.com/watch?v=RuDdltsfaVc
-        [...categories, ...categories].forEach(name => {
+        const track = document.getElementById('track');
+
+        [...categories, ...categories].forEach(cat => {
             track.innerHTML += `
-                <a class="card" href="pages/${name.toLowerCase()}.html">
-                    <div class="card-img" style="background-image: url('images/Home/${name.toLowerCase()}.webp'); background-size: cover;
-                        background-position: center;
-                        background-repeat: no-repeat;"></div> 
-                    <p class="card-title" style="font-size: 1.1rem;">${name}</p>
-                </a>
-            `;
+            <a class="card" href="pages/${cat.file}.html">
+                <div class="card-img" style="background-image: url('images/Home/marquee/${cat.file}.${cat.ext}'); background-size: cover; background-position: center; background-repeat: no-repeat;"></div>
+                <p class="card-title" style="font-size: 1.1rem;">${cat.name}</p>
+            </a>
+        `;
         });
     </script>
 
