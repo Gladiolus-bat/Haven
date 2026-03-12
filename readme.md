@@ -1,7 +1,7 @@
 
 # Haven
 
-A multi-page e-commerce marketplace built with HTML, CSS, and vanilla JavaScript.
+A multi-page e-commerce marketplace built with HTML, CSS, and vanilla JavaScript for The WebDev Community's Event 'Build The Mini Internet'.
 
 ---
 
@@ -37,11 +37,19 @@ haven/
 └── pages/
     ├── productPage.html         # All products with sidebar filter
     ├── productDetails.html      # Individual product view
+    ├── productDetails-Cardigan.html
+    ├── productDetails-Charizard.html
+    ├── productDetails-jew.html
+    ├── productDetails-Shoe.html
+    ├── productDetails-Usb-charger.html
+    ├── productDetails-Watch.html
     ├── payment.html             # Payment form with game voucher section
     ├── electronics.html
     ├── jewelry.html
     ├── watches.html
     ├── clothes.html
+    ├── headphones.html
+    ├── laptops.html
     ├── others.html
     ├── login.html
     ├── register.html
@@ -102,6 +110,12 @@ or use the Live Server extension in VS Code.
 | [Shirbhooshan Razopadhyay](https://github.com/Shirbhooshan) | Home Page + Payment Page + JS |
 | [Sahil Shrestha](https://github.com/Sai-Stha) | Product Descriptions Page |
 | [Supragya Singh Sipai](https://github.com/subi1313) | Profile Page + Header/Footer |
+
+---
+
+## Collaboration
+
+We collaborated with other fellow teams who participated in this event 'Build the Mini Internet'. We would like to thank the teams for letting us use their website links in our own website to create an interconnected platform.
 
 ---
 
