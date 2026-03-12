@@ -57,7 +57,7 @@ haven/
 
 **Login/Register** — A simple Login/Register page with JS integrations.
 
-**Payment** — Split layout with a card form on the left (dark red background) and a game voucher option on the right. Includes client-side form validation.
+**Payment** — Split layout with a card form on the left and a game voucher option on the right. Includes client-side form validation.
 
 ---
 
@@ -102,4 +102,4 @@ or use the Live Server extension in VS Code.
 
 ## License
 
-This project is for educational and personal use.
+This project is for educational and personal use. ©Haven
